@@ -7,6 +7,7 @@ export const Flags = {
 
 export const configurationFetchedHandler = fetcherResults => {
   if (fetcherResults.hasChanges && fetcherResults.fetcherStatus === 'APPLIED_FROM_NETWORK') {
+    console.log("RELOAD")
     window.location.reload(false)
   }
 };
